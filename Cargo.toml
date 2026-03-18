@@ -6,6 +6,10 @@ authors = ["Vlad0s <vladstolyarchuk7@gmail.com>"]
 version = "0.2.1"
 edition = "2024"
 
+[[bin]]
+name = "ss13-mlogfilter"
+path = "src/main.rs"
+
 [dependencies]
 anyhow = "1.0.100"
 clap = { version = "4.5.53", features = ["derive"] }
