@@ -3,7 +3,7 @@ name = "ss13_mlogfilter"
 description = "Simple CLI utility to filter Space Station 13 exported chat logs"
 license = "MIT"
 authors = ["Vlad0s <vladstolyarchuk7@gmail.com>"]
-version = "0.2.1"
+version = "0.4.0"
 edition = "2024"
 
 [[bin]]
@@ -13,6 +13,7 @@ path = "src/main.rs"
 [dependencies]
 anyhow = "1.0.100"
 clap = { version = "4.5.53", features = ["derive"] }
+colored = "3.1.1"
 regex = "1.12.2"
 serde = { version = "1.0.228", features = ["derive"] }
 toml = "0.9.8"
