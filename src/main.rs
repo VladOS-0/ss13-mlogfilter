@@ -344,7 +344,7 @@ fn process_log(
     Ok(())
 }
 
-fn filter_chat_log(chat_log: &String, config: &Config) -> Result<String, anyhow::Error> {
+fn filter_chat_log(chat_log: &str, config: &Config) -> Result<String, anyhow::Error> {
     let mut output = String::with_capacity(chat_log.len());
     let parts: Vec<&str> = chat_log.split_inclusive("<div class=\"Chat\">").collect();
     if parts.len() != 2 {
