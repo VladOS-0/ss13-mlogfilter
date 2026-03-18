@@ -45,9 +45,9 @@ jobs:
           mkdir -p release-assets
 
           if [ "${{ matrix.target }}" = "x86_64-pc-windows-gnu" ]; then
-            EXECUTABLE_NAME="ss13_mlogfilter.exe"
+            EXECUTABLE_NAME="ss13-mlogfilter.exe"
           else
-            EXECUTABLE_NAME="ss13_mlogfilter"
+            EXECUTABLE_NAME="ss13-mlogfilter"
           fi
 
           cp target/${{ matrix.target }}/release/$EXECUTABLE_NAME release-assets/

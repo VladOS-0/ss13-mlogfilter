@@ -293,7 +293,7 @@ fn get_path_for_output(
 }
 
 fn process_log(
-    log: &String,
+    log: &str,
     output_path: &PathBuf,
     config: &Config,
     overwrite: bool,
